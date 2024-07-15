@@ -1,0 +1,13 @@
+Factory:
+
+Usar el patrón Factory (tanto Factory Method como Abstract Factory) tiene varias ventajas sobre la creación directa de objetos usando new:
+
+Flexibilidad: las fábricas pueden decidir qué clase concreta crear una instancia en tiempo de ejecución, lo que permite cambios fáciles en la implementación sin afectar el código del cliente.
+
+Mantenibilidad: centralizar la lógica de creación de objetos en una fábrica simplifica el mantenimiento y la actualización del código. Si es necesario cambiar la forma en que se crean los objetos, solo es necesario modificar la fábrica.
+
+Desacoplamiento: el uso de fábricas desacopla el código del consumidor de clases concretas, lo que permite a los clientes depender de interfaces o clases abstractas. Esto facilita el intercambio de implementaciones sin cambiar el código del cliente.
+
+Encapsulación: las fábricas encapsulan la lógica de creación proporcionando una ubicación única para gestionar la creación de objetos complejos.
+
+Por ejemplo, si uno necesita cambiar la implementación de EmailNotificacion, solo tiene que modificar su fábrica correspondiente en lugar de buscar y reemplazar todas las instancias de la nueva EmailNotificacion() en la base del código.
